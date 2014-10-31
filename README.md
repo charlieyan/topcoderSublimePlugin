@@ -9,9 +9,9 @@ Plugin that takes a copy-pasted topcoder problem description in a sublime tab (p
 Then generates a new sublime tab where it populates className, signature, and writes some test cases for you
 
 TODOs:
-1. handle multiple argument signatures
-2. handle other topcoder languages
-3. refactor code for handling test cases
+* handle multiple argument signatures
+* handle other topcoder languages
+* refactor code for handling test cases
 
 ## Installation
 
