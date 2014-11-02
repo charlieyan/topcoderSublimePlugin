@@ -95,6 +95,12 @@ class TopcoderCommand(sublime_plugin.TextCommand):
       print "topcoder format maybe, but no python signature found, done"
       return
 
+    # find number of parameters
+    parameter_result = self.find_line_offset(content, "Parameters",1)
+    parameters = parameter_result[0].replace("\n","")
+    numParameters = len(parameters.split(","))
+    print numParameters
+
     # find examples and do parsing
     examples_start_result = self.find_line_offset(content, "Examples",0)
     examples_end_result = self.find_line_offset(content, "This problem statement",-1)
